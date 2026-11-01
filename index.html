@@ -2,38 +2,49 @@
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>ShadowGuard-AI: The Library</title>
 <style>
-body{margin:0;background:#0B1526;color:#EDE6D6;font-family:Georgia,'Times New Roman',serif}
-.rail{position:fixed;top:0;left:0;bottom:0;width:230px;background:#081020;border-right:2px solid #C9A227;padding:34px 24px;box-sizing:border-box}
-.rail .mark{font-size:15px;letter-spacing:4px;color:#E7C65B}
-.rail h1{font-size:27px;line-height:1.25;margin:14px 0 6px;font-weight:normal}
-.rail p{font-size:14px;line-height:1.6;color:#B9B09A}
-.rail nav a{display:block;color:#EDE6D6;text-decoration:none;padding:7px 0;border-top:1px solid #22334d;font-size:15px}
-main{margin-left:230px;padding:44px 52px;max-width:900px}
-h2{font-weight:normal;font-size:24px;border-bottom:1px solid #C9A227;padding-bottom:8px;letter-spacing:1px}
-p{line-height:1.75;font-size:16.5px}
-table{border-collapse:collapse;width:100%;font-size:15px}
-td{border-top:1px solid #22334d;padding:9px 8px;vertical-align:top}
-td.t a{color:#E7C65B;text-decoration:none}
+body{margin:0;background:#0A0A0B;color:#E8E2D2;font-family:Georgia,'Times New Roman',serif}
+.rail{position:fixed;top:0;left:0;bottom:0;width:228px;background:#080809;border-right:1px solid #26262B;padding:34px 24px;box-sizing:border-box}
+.rail .mark{font-size:12px;letter-spacing:4px;color:#E3C565}
+.rail h1{font-size:26px;line-height:1.3;margin:14px 0 6px;font-weight:normal}
+.rail p{font-size:13.5px;line-height:1.65;color:#9A958A}
+.rail nav a{display:block;color:#E8E2D2;text-decoration:none;padding:7px 0;border-top:1px solid #1E1E22;font-size:14.5px}
+main{margin-left:228px;padding:44px 52px;max-width:900px}
+h2{font-weight:normal;font-size:23px;border-bottom:1px solid #33332F;padding-bottom:8px;letter-spacing:1px}
+p{line-height:1.75;font-size:16px}
+table{border-collapse:collapse;width:100%;font-size:14.5px}
+td{border-top:1px solid #1E1E22;padding:9px 8px;vertical-align:top;color:#CFC8B6}
+td.t a{color:#E3C565;text-decoration:none}
+a{color:#E3C565}
+footer{color:#6E6A5E;font-size:12.5px;border-top:1px solid #1E1E22;margin-top:40px;padding-top:14px}
+
+.redact{margin:22px 0}.redact span{display:inline-block;height:10px;background:#1B1B1E;margin-right:8px;vertical-align:middle}
+.redact span.tick{background:#C9A227;height:10px}
+.strip{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));border:1px solid #26262B;margin:26px 0}
+.cell{padding:16px;border-right:1px solid #26262B}.cell:last-child{border-right:none}
+.cell .n{font-size:28px;color:#E3C565}.cell .l{font-size:11.5px;letter-spacing:1.6px;color:#9A958A;line-height:1.55}
 .wall{display:flex;flex-wrap:wrap;gap:10px}
-.wall-h{font-weight:normal;letter-spacing:3px;color:#E7C65B;font-size:15px;margin:26px 0 4px}
+.wall-h{letter-spacing:3px;color:#E3C565;font-size:14px;margin:26px 0 4px;font-weight:normal}
 figure.badge{margin:0;text-align:center;width:168px}
-figure.badge figcaption{font-size:11.5px;color:#B9B09A;line-height:1.45;padding:0 6px}
-footer{color:#8d8570;font-size:13px;border-top:1px solid #22334d;margin-top:40px;padding-top:14px}
+figure.badge figcaption{font-size:11px;color:#9A958A;line-height:1.5;padding:0 6px}
+
 @media(max-width:760px){.rail{position:static;width:auto;border-right:none}main{margin:0;padding:26px}}
 </style></head><body>
-<aside class="rail"><div class="mark">EST. IN THE OPEN</div><h1>ShadowGuard-AI</h1>
-<p>An open security library of 584 projects, kept public and free to read.</p>
+<aside class="rail"><div class="mark">THE LIBRARY</div><h1>ShadowGuard-AI</h1>
+<p>584 security projects. Public. Free to read.</p>
 <nav><a href="#about">The Library</a><a href="#shelf">Flagship Shelf</a><a href="#founder">The Founder</a><a href="#wall">The Wall</a></nav></aside>
 <main>
 <section id="about"><h2>The Library</h2>
-<p>ShadowGuard-AI is a library of 584 open-source security projects: scanners, analyzers, monitors, and the small sharp tools that do one job well. The original library was fully autonomous. I keep it public, documented, and free to read, because security tooling should be studied, not hoarded.</p>
-<p>Every project in the library carries its own page, its own documentation, and its own record of what it does and does not do. The fleet around it runs to 757 repositories across my accounts and organizations.</p></section>
+<p>ShadowGuard-AI is a library of 584 open-source security projects: scanners, analyzers, monitors, and small sharp tools that do one job well. The original library was fully autonomous. I keep it public and documented, because security tooling should be studied, not hoarded.</p>
+<div class="redact" aria-hidden="true"><span style="width:170px"></span><span style="width:92px"></span><span style="width:210px"></span><span class="tick" style="width:26px"></span></div>
+<div class="strip"><div class="cell"><div class="n">584</div><div class="l">PROJECTS IN THE LIBRARY</div></div><div class="cell"><div class="n">757</div><div class="l">REPOSITORIES IN THE FLEET</div></div><div class="cell"><div class="n">754</div><div class="l">AUDITED LINE BY LINE</div></div><div class="cell"><div class="n">0</div><div class="l">LIVE SECRETS FOUND</div></div></div>
+</section>
 <section id="shelf"><h2>Flagship Shelf</h2><table><tr><td class="t"><a href="https://github.com/ShadowGuard-AI/crypto-smart-contract-static-analyzer">crypto-smart-contract-static-analyzer</a></td><td>Static analysis for smart contracts.</td></tr><tr><td class="t"><a href="https://github.com/ShadowGuard-AI/crypto-signature-analyzer">crypto-signature-analyzer</a></td><td>Signature scheme analysis.</td></tr><tr><td class="t"><a href="https://github.com/ShadowGuard-AI/kem-interface-cycle-tester">kem-interface-cycle-tester</a></td><td>Post-quantum KEM interface cycles, tested end to end.</td></tr><tr><td class="t"><a href="https://github.com/ShadowGuard-AI/crypto-steganography">crypto-steganography</a></td><td>Steganography: encoding, hiding, and detection.</td></tr><tr><td class="t"><a href="https://github.com/ShadowGuard-AI/codeintel-os-command-injection-checker">codeintel-os-command-injection-checker</a></td><td>Command injection checks for code review.</td></tr><tr><td class="t"><a href="https://github.com/ShadowGuard-AI/vsl-port-banner-grabber">vsl-port-banner-grabber</a></td><td>Port scanning and banner grabbing.</td></tr><tr><td class="t"><a href="https://github.com/ShadowGuard-AI/file-sensitive-data">file-sensitive-data</a></td><td>Finds sensitive data hiding in plain files.</td></tr><tr><td class="t"><a href="https://github.com/ShadowGuard-AI/crypto-side-channel-simulator">crypto-side-channel-simulator</a></td><td>Side-channel behavior, simulated safely.</td></tr><tr><td class="t"><a href="https://github.com/ShadowGuard-AI/monitor-filechanges">monitor-filechanges</a></td><td>Watches files and reports what changed.</td></tr><tr><td class="t"><a href="https://github.com/ShadowGuard-AI/crypto-timing-attack-detector">crypto-timing-attack-detector</a></td><td>Timing attack detection.</td></tr></table>
-<p>The full catalogue lives at <a style="color:#E7C65B" href="https://github.com/ShadowGuard-AI">github.com/ShadowGuard-AI</a>.</p></section>
+<p>The full catalogue: <a href="https://github.com/ShadowGuard-AI">github.com/ShadowGuard-AI</a>.</p></section>
 <section id="founder"><h2>The Founder</h2><p>I am Gavin K. I publish as Epsilon0xCell. Everything on this page is part of a public record, and every claim on it can be checked.</p>
-<p>I build security tooling, I test it against its own documentation, and I write down what I find. This library is that habit at scale.</p></section>
+<p>I build security tooling, test it against its own documentation, and write down what I find. This library is that habit at scale.</p></section>
 <section id="wall"><h2>The Wall</h2>
-<h3 class="wall-h">The Elite Row</h3><div class="wall elite"><figure class="badge"><img src="assets/badges/nsa-codebreaker.svg" width="168" alt="NSA Codebreaker Challenge: Finisher, Solo Entrant"><figcaption>NSA Codebreaker Challenge: Finisher, Solo Entrant</figcaption></figure><figure class="badge"><img src="assets/badges/fbi-team.svg" width="168" alt="FBI TEAM Program Alumnus"><figcaption>FBI TEAM Program Alumnus</figcaption></figure><figure class="badge"><img src="assets/badges/giac-gsec.svg" width="168" alt="SANS GIAC: GSEC Certified"><figcaption>SANS GIAC: GSEC Certified</figcaption></figure><figure class="badge"><img src="assets/badges/giac-gfact.svg" width="168" alt="SANS GIAC: GFACT Certified"><figcaption>SANS GIAC: GFACT Certified</figcaption></figure><figure class="badge"><img src="assets/badges/giac-advisory.svg" width="168" alt="GIAC Advisory Board"><figcaption>GIAC Advisory Board</figcaption></figure></div><h3 class="wall-h">The Record</h3><div class="wall"><figure class="badge"><img src="assets/badges/cyber-scholar.svg" width="168" alt="National Cyber Scholar with Honors"><figcaption>National Cyber Scholar with Honors</figcaption></figure><figure class="badge"><img src="assets/badges/cyberstart.svg" width="168" alt="CyberStart America"><figcaption>CyberStart America</figcaption></figure><figure class="badge"><img src="assets/badges/fleet-library.svg" width="168" alt="584-Project Security Library"><figcaption>584-Project Security Library</figcaption></figure><figure class="badge"><img src="assets/badges/fleet-757.svg" width="168" alt="757 Repositories"><figcaption>757 Repositories</figcaption></figure></div>
+<h3 class="wall-h">The Elite Row</h3><div class="wall"><figure class="badge"><img src="assets/badges/nsa-codebreaker.svg" width="168" alt="NSA Codebreaker Challenge: Finisher, Solo Entrant"><figcaption>NSA Codebreaker Challenge: Finisher, Solo Entrant</figcaption></figure><figure class="badge"><img src="assets/badges/fbi-team.svg" width="168" alt="FBI TEAM Program Alumnus"><figcaption>FBI TEAM Program Alumnus</figcaption></figure><figure class="badge"><img src="assets/badges/giac-gsec.svg" width="168" alt="SANS GIAC: GSEC Certified"><figcaption>SANS GIAC: GSEC Certified</figcaption></figure><figure class="badge"><img src="assets/badges/giac-gfact.svg" width="168" alt="SANS GIAC: GFACT Certified"><figcaption>SANS GIAC: GFACT Certified</figcaption></figure><figure class="badge"><img src="assets/badges/giac-advisory.svg" width="168" alt="GIAC Advisory Board"><figcaption>GIAC Advisory Board</figcaption></figure></div>
+<h3 class="wall-h">The Record</h3><div class="wall"><figure class="badge"><img src="assets/badges/cyber-scholar.svg" width="168" alt="National Cyber Scholar with Honors"><figcaption>National Cyber Scholar with Honors</figcaption></figure><figure class="badge"><img src="assets/badges/cyberstart.svg" width="168" alt="CyberStart America"><figcaption>CyberStart America</figcaption></figure><figure class="badge"><img src="assets/badges/fleet-library.svg" width="168" alt="584-Project Security Library"><figcaption>584-Project Security Library</figcaption></figure><figure class="badge"><img src="assets/badges/fleet-757.svg" width="168" alt="757 Repositories"><figcaption>757 Repositories</figcaption></figure></div>
 </section>
 <footer>ShadowGuard-AI. Part of the Epsilon0xCell fleet. Source for everything on this page: the public record on GitHub.</footer>
 </main></body></html>
